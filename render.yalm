@@ -4,7 +4,7 @@ services:
     runtime: python
     plan: starter
     buildCommand: "pip install -r Scraper/requirements.txt"
-    startCommand: "python Scraper/testConseilEtat.py"
+    startCommand: "python Scraper/testConseilEtat.py --from 20240101 --to 20241231"
     envVars:
       - key: MEILI_URL
         value: https://meilisearch-instance-vvdt.onrender.com/  # Nom interne du service Meilisearch
