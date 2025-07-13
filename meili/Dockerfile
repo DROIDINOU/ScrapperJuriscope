@@ -6,4 +6,4 @@ FROM getmeili/meilisearch:v1.8
 EXPOSE 7700
 
 # Démarre Meilisearch
-CMD ["./meilisearch"]
+CMD ["meilisearch"]
