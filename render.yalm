@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: scraper-raad
+    runtime: python
+    plan: starter
+    buildCommand: "pip install -r scraper/requirements.txt"
+    startCommand: "python scraper/testConseilEtat.py"
+    envVars:
+      - key: MEILI_URL
+        value: http://ton-service-meilisearch:7700  # si hébergé sur Render
+      - key: MEILI_MASTER_KEY
+        value: cle-api-si-besoin

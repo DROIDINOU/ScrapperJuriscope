@@ -1,0 +1,17 @@
+annotated-types==0.7.0
+beautifulsoup4==4.13.4
+bs4==0.0.2
+camel-converter==4.0.1
+certifi==2025.7.9
+charset-normalizer==3.4.2
+idna==3.10
+meilisearch==0.36.0
+pydantic==2.11.7
+pydantic_core==2.33.2
+PyMuPDF==1.26.3
+requests==2.32.4
+soupsieve==2.7
+typing-inspection==0.4.1
+typing_extensions==4.14.1
+urllib3==2.5.0
+camel-converter
