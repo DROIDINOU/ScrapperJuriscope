@@ -7,6 +7,17 @@ services:
     startCommand: "python scraper/testConseilEtat.py"
     envVars:
       - key: MEILI_URL
-        value: http://ton-service-meilisearch:7700  # si hébergé sur Render
-      - key: MEILI_MASTER_KEY
-        value: cle-api-si-besoin
+        value: http://meilisearch-instance:7700  # Nom interne du service Meilisearch
+      # - key: MEILI_MASTER_KEY
+      #   value: ta-cle-api-secrete  # Décommente si tu actives la sécurité
+
+  - type: web
+    name: meilisearch-instance
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./meili/Dockerfile
+    envVars:
+      # - key: MEILI_MASTER_KEY
+      #   value: ta-cle-api-secrete  # Décommente si tu actives la sécurité
+      - key: MEILI_NO_ANALYTICS
+        value: 'true'
