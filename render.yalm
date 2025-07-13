@@ -1,13 +1,13 @@
 services:
-  - type: worker
-    name: scraper-raad
-    runtime: python
-    plan: starter
-    buildCommand: "pip install -r scraper/requirements.txt"
-    startCommand: "python scraper/testConseilEtat.py"
-    envVars:
-      - key: MEILI_URL
-        value: http://meilisearch-instance:7700  # Nom interne du service Meilisearch
+  #- type: worker
+    #name: scraper-raad
+    #runtime: python
+    #plan: starter
+    #buildCommand: "pip install -r scraper/requirements.txt"
+    #startCommand: "python scraper/testConseilEtat.py"
+    #envVars:
+      #- key: MEILI_URL
+        #value: http://meilisearch-instance:7700  # Nom interne du service Meilisearch
       # - key: MEILI_MASTER_KEY
       #   value: ta-cle-api-secrete  # Décommente si tu actives la sécurité
 
