@@ -7,7 +7,7 @@ services:
     startCommand: "python Scraper/testConseilEtat.py"
     envVars:
       - key: MEILI_URL
-        value: http://meilisearch-instance:7700  # Nom interne du service Meilisearch
+        value: https://meilisearch-instance-vvdt.onrender.com/  # Nom interne du service Meilisearch
       # - key: MEILI_MASTER_KEY
       #   value: ta-cle-api-secrete  # Décommente si tu actives la sécurité
 
