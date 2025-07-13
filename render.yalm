@@ -3,7 +3,7 @@ services:
     name: scraper-raad
     runtime: python
     plan: starter
-    buildCommand: "pip install -r scraper/requirements.txt"
+    buildCommand: "pip install -r Scraper/requirements.txt"
     startCommand: "python scraper/testConseilEtat.py"
     envVars:
       - key: MEILI_URL
