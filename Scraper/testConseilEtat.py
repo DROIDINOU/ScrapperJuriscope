@@ -6,12 +6,12 @@ import meilisearch
 from urllib.parse import unquote
 from datetime import datetime, timedelta
 import argparse
+import os
 
 BASE_URL = "https://www.raadvst-consetat.be"
 index_name = "conseil_etat_arrets100"
 
-# Connexion Meilisearch
-client = meilisearch.Client("http://127.0.0.1:7700")
+client = meilisearch.Client(os.getenv("MEILI_URL"))
 try:
     index = client.get_index(index_name)
 except meilisearch.errors.MeilisearchApiError:
